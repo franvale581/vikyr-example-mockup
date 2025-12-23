@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valkyiria</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo/logo-2d2.jpg" type="image/x-icon">
+
+    <!-- SEO: Description -->
+    <meta name="description" content="Built for the ones who don't ask — they execute. Sharp design, heavy presence, zero apologies. Wear ServinG Hats and remind the world you're here to dominate, not negotiate.">
+
+    <!-- SEO: Keywords -->
+    <meta name="keywords" content="gorras, hats, streetwear, ServinG Hats, moda urbana, cápsula exclusiva, diseño premium, headwear Argentina">
+
+    <!-- Open Graph (Facebook, Instagram, WhatsApp) -->
+    <meta property="og:title" content="ServinG Hats">
+    <meta property="og:description" content="Sharp design. Heavy presence. Zero apologies. Wear it to dominate.">
+    <meta property="og:image" content="./assets/logo/logo-2d2.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://servinghats.com">
+
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <!-- Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+
+<body>
+    <!-- seccion que funciona como main -->
+    <main class="main-section">
+
+        <div class="main-container">
+            <div class="main-logo">
+                <!-- Logo 3D reemplaza al logo anterior -->
+                <model-viewer src="./assets/logo/Untitled-metal-white-4.glb"
+                    rotation-per-second="30deg" camera-controls="false" interaction-prompt="none" disable-zoom
+                    disable-pan     orientation="0deg -22deg 0deg" style="height:19rem; width:19rem;">
+                </model-viewer>
+
+            </div>
+            <p id="date-time" class="date-time"></p>
+            <ul class="main-links-container">
+                <li class="main-link"><a href="./pages/shop-now.html">Shop Now</a></li>
+            </ul>
+
+            
+        </div>
+
+    </main>
+
+    <!-- scripts -->
+    <!-- script para el date-time -->
+    <script>
+        function actualizarFechaHora() {
+            const ahora = new Date();
+
+            // Formateo con dos dígitos (ej: 04 en vez de 4)
+            const dia = String(ahora.getDate()).padStart(2, '0');
+            const mes = String(ahora.getMonth() + 1).padStart(2, '0'); // Mes empieza en 0
+            const anio = ahora.getFullYear();
+
+            const horas = String(ahora.getHours()).padStart(2, '0');
+            const minutos = String(ahora.getMinutes()).padStart(2, '0');
+            const segundos = String(ahora.getSeconds()).padStart(2, '0');
+
+            const fechaHora = `${dia}/${mes}/${anio} ${horas}:${minutos}:${segundos}`;
+
+            document.getElementById("date-time").textContent = fechaHora;
+        }
+
+        // Actualiza al cargar y luego cada segundo
+        actualizarFechaHora();
+        setInterval(actualizarFechaHora, 1000);
+    </script>
+
+    <!-- script principal -->
+    <script type="module" src="./javascript/main.js"></script>
+
+</body>
+
+</html>

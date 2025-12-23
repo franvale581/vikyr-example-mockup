@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServinG Hats</title>
+    <link rel="shortcut icon" href="../assets/logo/logo-2d2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/shop-now.css">
+    <link rel="stylesheet" href="../styles/aux-mediaqueris.css">
+    <link rel="stylesheet" href="../styles/complete-buy.css">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <!-- top banner -->
+        <div class="top-banner">
+            <div class="scrolling-text">
+                <span>Welcome to ServinG Hats</span>
+            </div>
+        </div>
+
+        <!-- header/nav -->
+        <header class="header" id="Inicio">
+
+            <!-- Logo centrado -->
+            <div class="logo-container-complete-buy">
+                <!-- Logo 3D reemplaza al logo anterior -->
+                <model-viewer id="logo3d" src="../assets/logo/Untitled-metal-white-4.glb" auto-rotate rotation-per-second="30deg"
+                    camera-controls="false" interaction-prompt="none" disable-zoom disable-pan orientation="0deg -6deg 0deg" >
+                </model-viewer>
+            </div>
+
+            <script>
+                document.getElementById("logo3d").addEventListener("click", () => {
+                    window.location.href = "../pages/shop-now.html"; // o la ruta que quieras
+                });
+            </script>
+
+        </header>
+
+        <section class="complete-buy-section">
+
+            <form id="orderForm" autocomplete="on">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required />
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" required />
+
+                <label for="state">State / Province</label>
+                <input type="text" id="state" name="state" required />
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required />
+
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" required />
+
+                <input type="hidden" id="orderSummary" name="orderSummary">
+
+                <button type="submit" id="submitBtn">Continue to Payment</button>
+            </form>
+
+            <!-- Contenedor PayPal (inicialmente oculto) -->
+            <div id="paypal-button-container" style="display:none;"></div>
+
+
+        </section>
+
+
+        <!-- footer / contact -->
+
+
+        <footer class="footer fade-in-up delay-3" id="Contacto">
+
+            <div class="top-line"></div>
+            <div class="footer-top-container">
+                <div class="footer-logo">
+                    <!-- Logo 3D reemplaza al logo anterior -->
+                    <model-viewer src="../assets/logo/Untitled-metal-white-4.glb" alt="Pony Club Logo" auto-rotate
+                        rotation-per-second="30deg" camera-controls="false" interaction-prompt="none" disable-zoom
+                        disable-pan
+                        orientation="0deg -6deg 0deg" >
+                    </model-viewer>
+                </div>
+                <div class="social-links">
+                    <ul class="social-links-container">
+                        <li class="social-link">
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/servinghats?igsh=MWpmdjcydmozYnp5bA%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm6.25-.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <!-- TikTok -->
+                            <a href="https://www.tiktok.com/@sgcaps1?_r=1&_t=ZP-91ZMBwRyzBm" target="_blank" aria-label="TikTok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.75 2c.14 2.09 1.19 6.08 6 6.25v3.17a8.72 8.72 0 0 1-4.5-1.42v7.25a5.75 5.75 0 1 1-5.75-5.75c.44 0 .87.06 1.28.18v3.17a2.5 2.5 0 1 0 1.5 2.32V2h1.47Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/share/1A6wnftHsi/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M13 3h4a1 1 0 0 1 1 1v4h-3a1 1 0 0 0-1 1v3h4l-1 4h-3v8h-4v-8H8v-4h3V9a5 5 0 0 1 5-5Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="footer-form-section">
+
+                <form id="subscriptionForm">
+                    <input type="tel" name="telefono" placeholder="phone number" required autocomplete="tel">
+                    <button type="submit">subscribe</button>
+                </form>
+
+            </div>
+
+            <div class="footer-mid-container">
+                <div class="footer-mid-title">
+                    <h3>Payment Methods</h3>
+                </div>
+                <ul class="payment-container">
+                    <li><img src="../assets/payment/amex-3-svgrepo-com.svg" alt="payment"></li>
+                    <li><img src="../assets/payment/mastercard-old-3-svgrepo-com.svg" alt="payment"></li>
+                    <li><img src="../assets/payment/Mercado Pago.png" alt="payment"></li>
+                    <li><img src="../assets/payment/visa-3-svgrepo-com.svg" alt="payment"></li>
+                </ul>
+            </div>
+        </footer>
+
+        <div class="bottom-rights fade-in-up delay-3">
+            <p> © All rights reserved to Focus Vision Web Service.</p>
+        </div>
+
+    </main>
+
+    <div class="add-modal">
+        <p>Añadiste un producto</p>
+    </div>
+
+    <div class="subscribe-modal">
+        <p>Subscription successful</p>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- scripts -->
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('eWmmrliRgnM1RMH4T')
+    </script>
+
+    <script>
+        document.getElementById("subscriptionForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const form = this;
+            const modal = document.querySelector('.subscribe-modal');
+
+            emailjs.sendForm("service_upo688a", "template_sdd4xyu", form, "eWmmrliRgnM1RMH4T")
+                .then(() => {
+                    // mostrar modal
+                    modal.classList.add('active-modal');
+                    setTimeout(() => modal.classList.remove('active-modal'), 2500);
+
+                    form.reset(); // Limpia el form
+                })
+                .catch((error) => {
+                    alert("❌ Error al enviar la suscripción: " + JSON.stringify(error));
+                });
+        });
+    </script>
+
+    <!-- PAYPAL -->
+    <script src="https://www.paypal.com/sdk/js?client-id=ASib4N9VlLi5EFr1mlL8N2uMpG0ICyb2CA2fZtjzsFji0FIJ4VNe8UQ6DcoDWcD_TjgB3mYP3C2om40z&currency=USD"></script>
+
+
+    <script type="module" src="../javascript/data.js" defer></script>
+    <script type="module" src="../javascript/main.js" defer></script>
+</body>
+
+</html>

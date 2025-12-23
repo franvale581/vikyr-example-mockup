@@ -1,0 +1,231 @@
+:root {
+  --white: #f8f9fa;
+}
+
+.header {
+  position: sticky;
+  top: 2rem;
+  margin-top: 2rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+
+}
+
+/* Logo */
+.nav-logo {
+  height: 5.6rem;
+}
+
+.logo-container-complete-buy {
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container-complete-buy model-viewer {
+  height: 100%;
+  width: 100%;
+}
+
+.complete-buy-section {
+  width: 100%;
+  min-height: calc(var(--vh, 1vh) * 150);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* form */
+#orderForm {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  background-color: #ffffff17;
+  border: 1px solid #dddddd00;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.938);
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1px;
+  color:var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+#orderForm label {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+/* Inputs y campos de texto */
+#orderForm input {
+  padding: 8px 10px;
+  border: 1px solid #cccccc27;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background: rgba(255, 255, 255, 0.075);
+  color: var(--white);
+  font-family: "Kanit", sans-serif;
+}
+
+#orderForm input:focus {
+  border-color: #d6d6d6;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+/* Botón de submit */
+#orderForm button {
+  padding: 14px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+#orderForm button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .complete-buy-section {
+    padding: 40px 10px;
+  }
+
+  #orderForm {
+    padding: 20px;
+  }
+}
+
+#orderForm input[readonly] {
+  background-color: #f9f9f9;
+  color: #555;
+  cursor: not-allowed;
+}
+
+
+/* mensaje de agradecimiento */
+
+.complete-buy-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  gap: 1rem;
+  color: var(--white);
+  min-height: 40rem;
+}
+
+.complete-buy-message button {
+  padding: 14px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+.complete-buy-message button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+
+#subscriptionForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: "Kanit", sans-serif;
+}
+
+#subscriptionForm input[type="tel"] {
+    padding: 0.6rem 1rem;
+    border: 1px solid #cccccc56;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+    min-width: 200px;
+    background: transparent;
+    color: var(--white-grey);
+    font-family: "Kanit", sans-serif;
+}
+
+#subscriptionForm input[type="tel"]:focus {
+    border-color: #666;
+}
+
+#subscriptionForm button {
+    padding: 0.7rem 1.2rem;
+    background-color: #343a405b;
+    /* color oscuro tipo Shopify footer */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: "Kanit", sans-serif;
+}
+
+#subscriptionForm button:hover {
+    background-color: #212529;
+    /* más oscuro al hover */
+}
+
+
+.subscribe-modal {
+    font-family: "Kanit", sans-serif;
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-black);
+    color: var(--white-grey);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    z-index: 9999;
+}
+
+.subscribe-modal.active-modal {
+    bottom: 30px;
+    opacity: 1;
+}
+
+
+@media (max-width: 580px) {
+    .bottom-rights p {
+        font-size: .7rem;
+
+    }
+}

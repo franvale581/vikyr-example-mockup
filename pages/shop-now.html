@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valkyiria</title>
+    <link rel="shortcut icon" href="../assets/logo/logo-2d2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/shop-now.css">
+    <link rel="stylesheet" href="../styles/aux-mediaqueris.css">
+
+    <!-- Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <!-- top banner -->
+        <!-- <div class="top-banner fade-in-down delay-1">
+            <div class="scrolling-text">
+                <span>Welcome to ServinG Hats</span>
+            </div>
+        </div> -->
+
+        <!-- header/nav -->
+        <header class="header fade-in-down delay-1" id="Inicio">
+            <!-- Menú hamburguesa -->
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Logo centrado -->
+            <div class="logo-container">
+                <!-- Logo 3D reemplaza al logo anterior -->
+                <model-viewer src="../assets/logo/Untitled-metal-white-4.glb" auto-rotate rotation-per-second="30deg"
+                    camera-controls="false" interaction-prompt="none" disable-zoom disable-pan orientation="0deg -22deg 0deg" >
+                </model-viewer>
+            </div>
+
+            <!-- Carrito -->
+            <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                    <div class="cart-bubble">0</div>
+                </i>
+            </div>
+        </header>
+
+        <!-- Menú desplegable -->
+        <nav class="nav-menu" id="navMenu">
+            <button class="menu-close-btn" id="menuCloseBtn">×</button>
+
+            <ul>
+                <li><a href="../index.html" class="navbar-link">HOME</a></li>
+                <li><a href="../pages/shop-now.html" class="navbar-link">SHOP NOW</a></li>
+            </ul>
+        </nav>
+
+        <!-- carro desplegable -->
+
+        <div class="cart">
+
+            <button class="cart-close-btn" id="cartCloseBtn">×</button>
+            <h2>Products</h2>
+
+            <div class="cart-container"></div>
+
+            <div class="divider"></div>
+
+            <div class="cart-total">
+                <p>Total:</p>
+                <span class="total"></span>
+            </div>
+
+            <div class="shipping-calculator">
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" placeholder="Ej: 97000" />
+                <button id="calculateShippingBtn">Calculate Ship</button>
+                <p id="shippingResult"></p>
+                <p class="shipping-info">The value will be added to your cart</p>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn-buy">Complete Buy</button>
+                <button class="btn-delete">Delete Cart</button>
+            </div>
+        </div>
+
+        <!-- Product section -->
+        <section id="Product" class="products-section fade-in-up delay-3">
+
+            <div class="products-container">
+                <!-- <div class="product"> -->
+                <!-- <img src="./assets/products/product-1-2.jpg" alt="product" class="product-img">
+                <div class="product-text-container">
+                    <h3 class="product-name">Cap Burrito Edition </h3>
+                    <h2 class="created-by-product">By MAR HATS and JAVI P’S</h2>
+                    <p class="product-price">$35.00 </p>
+                </div>
+                <button class="btn-add">añadir</button>
+            </div> -->
+            </div>
+
+        </section>
+
+        <!-- footer / contact -->
+
+        <footer class="footer fade-in-up delay-3" id="Contacto">
+
+            <div class="top-line"></div>
+            <div class="footer-top-container">
+                <div class="footer-logo">
+                    <!-- Logo 3D reemplaza al logo anterior -->
+                    <model-viewer src="../assets/logo/Untitled-metal-white-4.glb" alt="Pony Club Logo" auto-rotate
+                        rotation-per-second="30deg" camera-controls="false" interaction-prompt="none" disable-zoom
+                        disable-pan orientation="0deg -19deg  0deg">
+                    </model-viewer>
+                </div>
+                <div class="social-links">
+                    <ul class="social-links-container">
+                        <li class="social-link">
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/servinghats?igsh=MWpmdjcydmozYnp5bA%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm6.25-.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <!-- TikTok -->
+                            <a href="https://www.tiktok.com/@sgcaps1?_r=1&_t=ZP-91ZMBwRyzBm" target="_blank" aria-label="TikTok">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.75 2c.14 2.09 1.19 6.08 6 6.25v3.17a8.72 8.72 0 0 1-4.5-1.42v7.25a5.75 5.75 0 1 1-5.75-5.75c.44 0 .87.06 1.28.18v3.17a2.5 2.5 0 1 0 1.5 2.32V2h1.47Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/share/1A6wnftHsi/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M13 3h4a1 1 0 0 1 1 1v4h-3a1 1 0 0 0-1 1v3h4l-1 4h-3v8h-4v-8H8v-4h3V9a5 5 0 0 1 5-5Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="footer-form-section">
+
+                <form id="subscriptionForm">
+                    <input type="tel" name="telefono" placeholder="phone number" required autocomplete="tel">
+                    <button type="submit">subscribe</button>
+                </form>
+
+            </div>
+
+            <div class="footer-mid-container">
+                <div class="footer-mid-title">
+                    <h3>Payment Methods</h3>
+                </div>
+                <ul class="payment-container">
+                    <li><img src="../assets/payment/amex-3-svgrepo-com.svg" alt="payment"></li>
+                    <li><img src="../assets/payment/mastercard-old-3-svgrepo-com.svg" alt="payment"></li>
+                    <li><img src="../assets/payment/paypal-svgrepo-com.svg" alt="payment"></li>
+                    <li><img src="../assets/payment/visa-3-svgrepo-com.svg" alt="payment"></li>-2
+                </ul>
+            </div>
+        </footer>
+
+        <div class="bottom-rights fade-in-up delay-3">
+            <p> © All rights reserved to Focus Vision Web Service.</p>
+        </div>
+
+    </main>
+
+    <div class="add-modal">
+        <p>added product</p>
+    </div>
+
+    <div class="subscribe-modal">
+        <p>Subscription successful</p>
+    </div>
+
+    
+    <div id="shippingModal" class="shipping-modal">
+        <div class="shipping-modal-content">
+            <h3>Calculá tu envío</h3>
+            <p>Antes de continuar, ingresá tu código postal para calcular el costo del envío.</p>
+            <button id="closeShippingModal">cerrar</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- scripts -->
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a0c4fed9cc.js" crossorigin="anonymous"></script>
+
+    <!-- scripts -->
+    <script>
+        document.getElementById("subscriptionForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const form = this;
+            const modal = document.querySelector('.subscribe-modal');
+
+            emailjs.sendForm("service_upo688a", "template_sdd4xyu", form, "eWmmrliRgnM1RMH4T")
+                .then(() => {
+                    // mostrar modal
+                    modal.classList.add('active-modal');
+                    setTimeout(() => modal.classList.remove('active-modal'), 2500);
+
+                    form.reset(); // Limpia el form
+                })
+                .catch((error) => {
+                    alert("❌ Error al enviar la suscripción: " + JSON.stringify(error));
+                });
+        });
+    </script>
+
+    <script type="module" src="../javascript/data.js" defer></script>
+    <script type="module" src="../javascript/main.js" defer></script>
+</body>
+
+</html>
