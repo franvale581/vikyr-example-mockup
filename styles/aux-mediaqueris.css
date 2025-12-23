@@ -127,7 +127,7 @@
 
     /* product */
     .product-section {
-        height: 40rem;
+        height: 35rem;
         gap: 8rem;
     }
 }
@@ -254,7 +254,7 @@
 
     .products-section {
         padding: 1rem 0;
-        min-height: 45rem;
+        min-height: 35rem;
     }
 
 
@@ -353,7 +353,7 @@
 
     .products-section {
         padding: 1rem 0;
-        min-height: 45rem;
+        min-height: 35rem;
     }
 
 
