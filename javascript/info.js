@@ -3,7 +3,7 @@ console.log("info.js cargado correctamente");
 
 const selectedId = Number(localStorage.getItem("selectedProductId"));
 
- const BASE_URL = 'https://loved-bat-5e42f2e983.strapiapp.com';
+ const BASE_URL = 'https://bold-wealth-e61772f91b.strapiapp.com';
 
 async function fetchProductById(id) {
   try {

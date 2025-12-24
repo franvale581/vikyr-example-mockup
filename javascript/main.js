@@ -16,7 +16,7 @@ window.addEventListener('resize', fixVh);
 
 function iniciarApp() {
   // ----------- CONSTANTS -------------
-  const BASE_URL = 'https://loved-bat-5e42f2e983.strapiapp.com'
+  const BASE_URL = 'https://bold-wealth-e61772f91b.strapiapp.com'
 
   // ----------- REFERENCIAS DOM -------------
   const menuToggle = document.getElementById('menuToggle');
